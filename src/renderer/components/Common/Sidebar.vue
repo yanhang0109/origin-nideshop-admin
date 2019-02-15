@@ -53,6 +53,10 @@
                     <i class="fa fa-large fa-truck"></i>
                     <span>店铺运营</span>
                 </template>
+                <el-menu-item index="/dashboard/group">
+                    <i class="fa fa-circle"></i>
+                    <span>团购管理</span>
+                </el-menu-item>
                 <el-menu-item index="/dashboard/operate/topic">
                     <i class="fa fa-circle"></i>
                     <span>专题管理</span>

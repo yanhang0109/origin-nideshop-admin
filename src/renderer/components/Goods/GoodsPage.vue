@@ -25,32 +25,32 @@
             </div>
             <div class="form-table-box">
                 <el-table :data="tableData" style="width: 100%" border stripe>
-                    <el-table-column prop="id" label="ID" width="100">
+                    <el-table-column align="center"  prop="id" label="ID" width="100">
                     </el-table-column>
-                    <el-table-column prop="name" label="商品名称">
+                    <el-table-column align="center"  prop="name" label="商品名称">
                     </el-table-column>
-                    <el-table-column prop="retail_price" label="售价" width="120">
+                    <el-table-column align="center"  prop="retail_price" label="售价" width="120">
                     </el-table-column>
-                    <el-table-column prop="goods_number" label="库存" width="120">
+                    <el-table-column align="center"  prop="goods_number" label="库存" width="120">
                     </el-table-column>
-                    <el-table-column prop="is_new" label="新品" width="80">
+                    <el-table-column align="center"  prop="is_new" label="新品" width="80">
                         <template scope="scope">
                             {{ scope.row.is_new == 1 ? '是' : '否' }}
                         </template>
                     </el-table-column>
-                    <el-table-column prop="is_new" label="人气" width="80">
+                    <el-table-column align="center"  prop="is_new" label="人气" width="80">
                         <template scope="scope">
                             {{ scope.row.is_hot == 1 ? '是' : '否' }}
                         </template>
                     </el-table-column>
-                    <el-table-column prop="is_show" label="上架" width="80">
+                    <el-table-column align="center"  prop="is_show" label="上架" width="80">
                         <template scope="scope">
                             {{ scope.row.is_on_sale == 1 ? '是' : '否' }}
                         </template>
                     </el-table-column>
-                    <el-table-column prop="sort_order" label="排序" width="80">
+                    <el-table-column align="center"  prop="sort_order" label="排序" width="80">
                     </el-table-column>
-                    <el-table-column label="操作" width="140">
+                    <el-table-column align="center" fixed="right" label="操作" width="140">
                         <template scope="scope">
                             <el-button size="small" @click="handleRowEdit(scope.$index, scope.row)">编辑</el-button>
                             <el-button size="small" type="danger" @click="handleRowDelete(scope.$index, scope.row)">删除</el-button>
@@ -98,7 +98,7 @@
           type: 'warning'
         }).then(() => {
 
-          this.axios.post('商品/destory', { id: row.id }).then((response) => {
+          this.axios.post('/goods/destory', { id: row.id }).then((response) => {
             console.log(response.data)
             if (response.data.errno === 0) {
               this.$message({

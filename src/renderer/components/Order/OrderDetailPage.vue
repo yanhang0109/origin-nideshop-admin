@@ -1,9 +1,11 @@
 <template>
     <div class="content-page">
         <div class="content-nav">
-            <div class="breadcrumb">
-                订单详情
-            </div>
+            <el-breadcrumb class="breadcrumb" separator="/">
+                <el-breadcrumb-item :to="{ path: '/dashboard' }">首页</el-breadcrumb-item>
+                <el-breadcrumb-item>订单中心</el-breadcrumb-item>
+                <el-breadcrumb-item>订单详情</el-breadcrumb-item>
+            </el-breadcrumb>
             <div class="operation-nav">
                 <el-button type="primary" @click="goBackPage" size="small" icon="arrow-left">返回列表</el-button>
             </div>

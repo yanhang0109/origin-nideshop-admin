@@ -62,6 +62,16 @@ export default new Router({
                     component: require('@/components/Order/OrderDetailPage')
                 },
                 {
+                    path: 'group',
+                    name: 'group',
+                    component: require('@/components/Group/GroupPage')
+                },
+                {
+                    path: 'group/add',
+                    name: 'group_add',
+                    component: require('@/components/Group/GroupAddPage')
+                },
+                {
                     path: 'operate/topic',
                     name: 'topic',
                     component: require('@/components/Topic/TopicPage')
