@@ -26,7 +26,10 @@
     "postinstall": "npm run lint:fix"
   },
   "dependencies": {
+    "@vue/devtools": "latest",
+    "element-ui": "^2.5.4",
     "vue": "^2.5.16",
+    "vue-axios": "^2.0.2",
     "axios": "^0.18.0",
     "vue-electron": "^1.0.6",
     "vue-router": "^3.0.1",
@@ -68,6 +71,7 @@
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.2.0",
     "inject-loader": "^4.0.1",
+    "json-loader": "^0.5.4",
     "karma": "^2.0.2",
     "karma-chai": "^0.1.0",
     "karma-coverage": "^1.1.2",
@@ -96,5 +100,6 @@
     "webpack-dev-server": "^3.1.4",
     "webpack-hot-middleware": "^2.22.2",
     "webpack-merge": "^4.1.3"
-  }
+  },
+  "__npminstall_done": false
 }

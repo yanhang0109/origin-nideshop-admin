@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>nideshop-admin</title>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <% if (htmlWebpackPlugin.options.nodeModules) { %>
       <!-- Add `node_modules/` to global paths so `require` works properly in development -->
       <script>
@@ -18,7 +19,7 @@
         if (process.env.NODE_ENV !== 'development') window.__static = require('path').join(__dirname, '/static').replace(/\\/g, '\\\\')
       </script>
     <% } %>
-
+    <script src="http://localhost:8098"></script>
     <!-- webpack builds are automatically injected -->
   </body>
 </html>
